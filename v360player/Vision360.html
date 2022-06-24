@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>V360 Viewer </title>
+    <link href="css/vision360.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.min.js"></script>
+    <!--Use for watermark logo in viewer-->
+    <script type="text/javascript" src="js/w.js"></script>
+    <!--Use for watermark logo in viewer-->
+    <script type="text/javascript" src="js/vision360.js"></script>
+    <script>
+      $(document).ready(function(){
+			$('.Vision360').Vision360({
+				movieName:'moviename',
+				sideView:'',
+				buttons:'',
+				zoom:0,
+				isHashSURL:0,
+				zoomslide:1,
+			});
+	});
+    </script>
+    <!--Read viewer manual first.Parameter effect are same with query string and function.If you use parameter then functional setting is removed-->
+</head>
+<body>
+    <div class='Vision360'>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+.loads(srcUrl)
+# print(jsonText)

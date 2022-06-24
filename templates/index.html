@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="../static/index.css" />
+    </head>
+
+    <body>
+        <form class="grid" action="/result" method="POST">
+            {% if count %} {% if filename %}
+
+            <center>
+                <h3 style="color: blue" class="let_space">
+                    Total {{count}} Files Saved to {{filename}}
+                </h3>
+            </center>
+
+            {% endif %} {% endif %}
+
+            <label for="name">Enter the link to extract json files: </label>
+            <input type="text" id="filename" name="filename" />
+
+            <center><input class="file_submit" type="Submit" /></center>
+        </form>
+
+        <br />
+        <br />
+        <br />
+    </body>
+</html>
